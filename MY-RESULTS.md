@@ -30,6 +30,6 @@
 - Main message (the meeting starts at a given time): kept.
 - Wording: "rencontre" is understandable, but "réunion" is the more usual word for a business meeting. Quality not yet checked by a fluent French speaker.
 
-**Offline test:** not yet tested. A connected run is not proof of offline operation.
+**Offline test (Wi-Fi off, 9 Nov 2026):** both worked. French: "La rencontre débute à 18h." (223 ms). Spanish: "La reunión comienza a las 6 p.m." (205 ms).
 
 **Blockers:** none now. Earlier network timeouts only affected the install.

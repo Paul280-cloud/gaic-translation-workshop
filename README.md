@@ -43,7 +43,18 @@ Numbers and times were checked and are correct. Wording quality is **not yet che
 
 ## Offline status
 
-Not yet tested without internet. A connected run is not proof of offline operation.
+Tested on 9 November 2026 with Wi-Fi turned off, after the models had already been downloaded. Command:
+
+```
+npm run translate -- "The meeting starts at 6 pm." && npm run translate:es -- "The meeting starts at 6 pm."
+```
+
+| Language | Output (Wi-Fi off) | Time |
+|---|---|---|
+| French | La rencontre débute à 18h. | 223 ms |
+| Spanish | La reunión comienza a las 6 p.m. | 205 ms |
+
+Both translations worked with no connection, and the output matched the connected runs. The models must be downloaded once while online first. This was tested on one Mac only (macOS, Apple Silicon, Node 22.21.1).
 
 ## Blockers
 
